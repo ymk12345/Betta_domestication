@@ -12,7 +12,7 @@ mkdir $OUTDIR
 NAME=$(basename "$VCF")
 FILTEREXP=$(echo -e "MAF<$MINMAF || F_MISSING>0.1 || MAF>$MAXMAF")
 
-seq 1 2 | xargs -n1 -P1 -I {} bcftools filter -e "$FILTEREXP" --regions {} -o ${OUTDIR}/${NAME%.*}.chr{}.maf${MINMAF}.${MAXMAF}.vcf $VCF
+seq 1 24 | xargs -n1 -P1 -I {} bcftools filter -e "$FILTEREXP" --regions {} -o ${OUTDIR}/${NAME%.*}.chr{}.maf${MINMAF}.${MAXMAF}.vcf $VCF
 
 ls -1 ${OUTDIR}/${NAME%.*}.chr*.vcf > ${OUTDIR}/${NAME%.*}_vcflist.txt
 
