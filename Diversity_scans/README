@@ -1,1 +1,9 @@
 
+Standard PopGen analysis:
+
+Nucleotide diversity: Intergenic, Genic, Exonic, Intronic (totals without binning)
+Tajima's D: (refer to older repository)
+LD Decay:
+Fst: (refer to older repository)
+Dxy:
+Het: Include invariants (totals without binning)
