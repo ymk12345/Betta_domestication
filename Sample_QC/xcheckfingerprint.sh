@@ -17,7 +17,7 @@ while read FILE; do
 	
 		if [[ "$FILE" != "$FILE1" ]]; then
 
-		java -jar /moto/ziab/users/yk2840/software/picard/build/libs/picardcloud.jar CrosscheckFingerprints \
+		java -jar picardcloud.jar CrosscheckFingerprints \
         	  	I=$FILE \
 	  		SI=$FILE1 \
 	  		HAPLOTYPE_MAP=Betta_GATK_filtered_forFingerprint.recode.renamed.chr.thin10.maf0.3.0.95.frqld.hapmap.complete.txt\
