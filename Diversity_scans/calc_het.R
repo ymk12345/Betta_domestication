@@ -1,4 +1,6 @@
 # Heterozygosity:
+# NOTE: THIS HAS TO BE DONE USING THE INVARIANT VCF FILE
+
 args = commandArgs(trailingOnly=TRUE)
 vcfpath1=args[1]
 vcfpath2=args[2]
