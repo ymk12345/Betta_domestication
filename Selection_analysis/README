@@ -1,5 +1,6 @@
 
 Things to include:
 
-Cleaned-up version of dN/dS
+Cleaned-up version of dN/dS; include pN/pS simulation analysis
+
 MK Test (include script to align genome to outgroup genome and for identifying ancestral variants)
